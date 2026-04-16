@@ -376,13 +376,86 @@ class BasicPattern {
         // System.out.println();
         // }
 
-
         // homework
         // v
         // ^
 
+        // // Pattern 11
+
+        // // Numarical pyramid patter
+
+        // // - - - 1
+        // // - - 1 2 1
+        // // - 1 2 3 2 1
+        // // 1 2 3 4 3 2 1
+        // int n = 4;
+
+        // for(int row=1;row<=n;row++){
+        // for(int col=1;col<=n-row;col++){
+        // System.out.print("- ");
+        // }
+
+        // for(int col=1;col<=row;col++){
+        // System.out.print(col+ " ");
+        // }
+        // int decRowvalue = row-1;
+        // for(int col =1; col<=row-1;col++){
+        // System.out.print(decRowvalue+ " ");
+        // decRowvalue--;
+        // }
+        // System.out.println();
+
+        // }
+
+        // // - - - 1
+        // // - - 2 2 2
+        // // - 3 3 3 3 3
+        // // 4 4 4 4 4 4 4
+
+        // int n =4;
+        // for(int row=1;row<=n;row++){
+        // for(int col=1;col<=n-row;col++){
+        // System.out.print("- ");
+        // }
+        // for(int col=1;col<=2*row-1;col++){
+        // System.out.print(row+ " ");
+        // }
+        // System.out.println();
+        // }
+
+
+
+
+
+        // // - - - A 
+        // // - - A B A 
+        // // - A B C B A 
+        // // A B C D C B A
+        // int n = 4;
+
+        // for (int row = 1; row <= n; row++) {
+        //     for (int col = 1; col <= n - row; col++) {
+        //         System.out.print("- ");
+        //     }
+
+        //     for (int col = 1; col <= row; col++) {
+        //         int a = col;
+        //         int b = 'A' - 1;
+        //         int ans = a + b;
+        //         char finalAns = (char) ans;
+        //         System.out.print(finalAns + " ");
+        //     }
+        //     char decRowvalue = (char)(row + 'A' - 2);
+        //     for (int col = 1; col <= row - 1; col++) {
+        //         System.out.print(decRowvalue + " ");
+        //         decRowvalue--;
+        //     }
+        //     System.out.println();
+        // }
+
+
+
 
         
-
     }
 }
