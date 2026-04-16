@@ -307,9 +307,82 @@ class BasicPattern {
         // System.out.println();
         // }
 
+        // // Numarical Pattern
+        // // 1
+        // // 1 2
+        // // 1 2 3
+        // // 1 2 3 4
+        // // 1 2 3 4 5
 
+        // int n =5;
+        // for(int row=1;row<=n;row++){
+        // for(int col=1;col<=row;col++){
+        // System.out.print(col+ " ");
+        // }
+        // System.out.println();
+        // }
+
+        // // 1
+        // // 2 3
+        // // 4 5 6
+        // // 7 8 9 10
+        // // 11 12 13 14 15
+
+        // int n = 5;
+        // int count = 1;
+        // for (int row = 1; row <= n; row++) {
+        // for (int col = 1; col <= row; col++) {
+        // System.out.print(count + " ");
+        // count++;
+        // }
+        // System.out.println();
+        // }
+
+        // // Alpha Numarical Pattern
+        // // A
+        // // A B
+        // // A B C
+        // // A B C D
+        // // A B C D E
+
+        // int n = 5;
+
+        // for(int row=1;row<=n;row++){
+        // for(int col=1;col<=row;col++){
+        // int a = col;
+        // int b = ('A' - 1);
+        // int ans = a+b;
+        // char finalAns = (char)ans;
+        // System.out.print(finalAns+ " ");
+        // }
+        // System.out.println();
+        // }
+
+        // // E
+        // // E D
+        // // E D C
+        // // E D C B
+        // // E D C B A
+        // int n = 5;
+
+        // for (int row = 1; row <= n; row++) {
+        // for (int col = 1; col <= row; col++) {
+        // int a = n - col;
+        // int b = 'A';
+        // int ans = a+b;
+        // char finalAns = (char)ans;
+        // System.out.print(finalAns+ " ");
+        // }
+        // System.out.println();
+        // }
+
+
+        // homework
+        // v
+        // ^
 
 
         
+
     }
 }
