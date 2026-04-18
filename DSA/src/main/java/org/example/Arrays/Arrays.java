@@ -146,7 +146,7 @@ public class Arrays {
         // }
         // System.out.println(ans);
 
-        int[][] arr = { { 2, 5, 3 }, { 56, 5, 7 } };
+        // int[][] arr = { { 2, 5, 3 }, { 56, 5, 7 } };
 
         // int maxvalue = arr[0][0];
 
