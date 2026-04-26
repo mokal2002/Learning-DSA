@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Link Fetcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔗 Website Link Fetcher</h1>
+            <p>Fetch all links from any website</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <div class="form-group">
+                    <label for="url-input">Enter Website URL:</label>
+                    <input 
+                        type="text" 
+                        id="url-input" 
+                        placeholder="https://example.com"
+                        value="https://example.com"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="link-type">Filter Links:</label>
+                    <select id="link-type">
+                        <option value="all">All Links</option>
+                        <option value="internal">Internal Links Only</option>
+                        <option value="external">External Links Only</option>
+                        <option value="images">Images Only</option>
+                    </select>
+                </div>
+
+                <button id="fetch-btn" class="btn-primary">Fetch Links</button>
+            </div>
+
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Fetching links...</p>
+            </div>
+
+            <div id="error" class="error-box hidden"></div>
+
+            <div id="results-section" class="results-section hidden">
+                <div class="results-header">
+                    <h2>Found Links</h2>
+                    <div class="controls">
+                        <button id="copy-btn" class="btn-secondary">Copy All</button>
+                        <button id="download-btn" class="btn-secondary">Download</button>
+                    </div>
+                </div>
+
+                <div class="filters">
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        placeholder="Search links..."
+                        class="search-box"
+                    >
+                    <span id="link-count" class="link-count">0 links found</span>
+                </div>
+
+                <div id="links-container" class="links-container"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Created with ❤️ | Website Link Fetcher v1.0</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
