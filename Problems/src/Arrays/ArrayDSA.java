@@ -4,10 +4,28 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.HashSet;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
 
 public class ArrayDSA {
+
+    //get The First Repeting Number of an Array.
+    public static int getFirstRepetingElemrnt(int[] arr){
+        HashMap<Integer, Integer> freq = new HashMap<>();
+
+        for(int num: arr){
+            freq.put(num, freq.getOrDefault(num, 0) + 1);
+        }
+
+        for(int i: arr){
+            if(freq.get(i) > 1){
+                return i;
+            }
+        }
+        return -1;
+    }
 
     //Remove Duplicates from Sorted Array
     public static int RemoveDuplicatedFromSortedArrays(int[] nums){
@@ -74,10 +92,12 @@ public class ArrayDSA {
 
     public static void main(String[] args) {
 
-
-        //Duplicated Remove
-        int[] nums = {1,2,3,4,4,5};
-        System.out.println(RemoveDuplicatedFromSortedArrays(nums));
+        // //First Repeting Number
+        int[] arr = {1,20,3,4,5,2,6,7,8,9,6};
+        System.out.println(getFirstRepetingElemrnt(arr));
+        // //Duplicated Remove
+        // int[] nums = {1,2,3,4,4,5};
+        // System.out.println(RemoveDuplicatedFromSortedArrays(nums));
         // //3Sum
         // int[] nums = {-1,0,1,2,-1,-4};
         // System.out.println(ThreeSum(nums));
