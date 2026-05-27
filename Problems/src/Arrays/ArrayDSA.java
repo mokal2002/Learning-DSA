@@ -11,6 +11,29 @@ import java.util.Set;
 
 public class ArrayDSA {
 
+    //Find The Pivot Index.
+    public static int pivotIndex(int[] nums){
+        int n = nums.length;
+        int[] leftSum = new int[n];
+        int[] rigthSum = new int[n];
+
+        leftSum[0] = nums[0];
+        for (int i = 1; i < n; i++) {
+            leftSum[i] = leftSum[i-1] +nums[i];
+        }
+        rigthSum[n-1] = nums[n-1];
+        for (int i = n-2; i >=0; i--) {
+            rigthSum[i] = rigthSum[i+1] + nums[i];
+        }
+        for (int i = 0; i < n; i++) {
+            if(leftSum[i] == rigthSum[i]){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+
     //get The First Repeting Number of an Array.
     public static int getFirstRepetingElemrnt(int[] arr){
         HashMap<Integer, Integer> freq = new HashMap<>();
@@ -94,7 +117,8 @@ public class ArrayDSA {
 
         // //First Repeting Number
         int[] arr = {1,20,3,4,5,2,6,7,8,9,6};
-        System.out.println(getFirstRepetingElemrnt(arr));
+        System.out.println(pivotIndex(arr));
+        // System.out.println(getFirstRepetingElemrnt(arr));
         // //Duplicated Remove
         // int[] nums = {1,2,3,4,4,5};
         // System.out.println(RemoveDuplicatedFromSortedArrays(nums));
