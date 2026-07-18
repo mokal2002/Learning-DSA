@@ -25,17 +25,35 @@ public class SortingAlgo {
                     minIndex = j;
 
                 }
-                
+
             }
             int temp = arr[i];
             arr[i] = arr[minIndex];
             arr[minIndex] = temp;
-            System.out.println("Round "+ i);
+            System.out.println("Round " + i);
             for (int value : arr) {
-                    System.out.print(value + " ");
-                }
-                System.out.println();
+                System.out.print(value + " ");
+            }
+            System.out.println();
         }
+
+    }
+
+    public static void insertionSort(int arr[]) {
+        int n = arr.length;
+        for (int i = 1; i < n; i++) {
+            int curr = i;
+            int prev = i - 1;
+            int currValue = arr[i];
+            while (prev >= 0 && currValue < arr[prev]) {
+                arr[prev + 1] = arr[prev];
+                prev--;
+
+            }
+            arr[prev + 1] = currValue;
+
+        }
+
     }
 
     public static void main(String[] args) {
@@ -48,7 +66,7 @@ public class SortingAlgo {
         // System.out.println();
 
         int arr[] = { 3, 1, 5, 4, 2 };
-        selectionSort(arr);
+        insertionSort(arr);
         System.out.println("Printing the Sorted Array.");
         for (int value : arr) {
             System.out.print(value + " ");
