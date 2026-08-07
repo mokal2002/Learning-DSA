@@ -8,10 +8,9 @@ public class FindSqureRootUsingBS {
 
         while (s <= e) {
             int mid = s + (e - s) / 2;
-            long square = (long) mid * mid;
-            if (square == x) {
+            if (mid == x/mid) {
                 return mid;
-            } else if (square > x) {
+            } else if (mid > x/mid) {
                 e = mid - 1;
             } else {
                 ans = mid;
