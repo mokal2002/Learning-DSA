@@ -2,9 +2,13 @@ package searchingalgo;
 
 public class FindSqureRootUsingBS {
     public static int findSqurRoot(int x) {
-        int s = 0;
+        int s = 1;
         int e = x;
         int ans = -1;
+
+        if(x == 0){
+            return 0;
+        }
 
         while (s <= e) {
             int mid = s + (e - s) / 2;
